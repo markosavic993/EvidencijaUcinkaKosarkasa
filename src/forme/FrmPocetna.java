@@ -390,7 +390,7 @@ public class FrmPocetna extends javax.swing.JFrame {
 
         jMenu2.setText("Izmena");
 
-        jmiIzmenaKosarkasa.setText(" Izmeni košarkaša");
+        jmiIzmenaKosarkasa.setText("Izmeni košarkaša");
         jmiIzmenaKosarkasa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jmiIzmenaKosarkasaActionPerformed(evt);
@@ -410,7 +410,7 @@ public class FrmPocetna extends javax.swing.JFrame {
 
         jMenu4.setText("Alatke");
 
-        jMenu5.setText(" Pronađi");
+        jMenu5.setText("Pronađi");
 
         jmiPronadjiKosarkasa.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_K, java.awt.event.InputEvent.ALT_MASK));
         jmiPronadjiKosarkasa.setText(" Pronađi košarkaša");
@@ -468,7 +468,7 @@ public class FrmPocetna extends javax.swing.JFrame {
 
         jMenu7.setText("Evidencija");
 
-        jMenu8.setText(" Tip učinka");
+        jMenu8.setText("Tip učinka");
 
         jmiDodajTipUcinka.setText("Dodaj tip učinka");
         jmiDodajTipUcinka.addActionListener(new java.awt.event.ActionListener() {

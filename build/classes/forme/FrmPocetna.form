@@ -96,7 +96,7 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jmiIzmenaKosarkasa">
               <Properties>
-                <Property name="text" type="java.lang.String" value=" Izmeni ko&#x161;arka&#x161;a"/>
+                <Property name="text" type="java.lang.String" value="Izmeni ko&#x161;arka&#x161;a"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmiIzmenaKosarkasaActionPerformed"/>
@@ -119,7 +119,7 @@
           <SubComponents>
             <Menu class="javax.swing.JMenu" name="jMenu5">
               <Properties>
-                <Property name="text" type="java.lang.String" value=" Prona&#x111;i"/>
+                <Property name="text" type="java.lang.String" value="Prona&#x111;i"/>
               </Properties>
               <SubComponents>
                 <MenuItem class="javax.swing.JMenuItem" name="jmiPronadjiKosarkasa">
@@ -193,7 +193,7 @@
           <SubComponents>
             <Menu class="javax.swing.JMenu" name="jMenu8">
               <Properties>
-                <Property name="text" type="java.lang.String" value=" Tip u&#x10d;inka"/>
+                <Property name="text" type="java.lang.String" value="Tip u&#x10d;inka"/>
               </Properties>
               <SubComponents>
                 <MenuItem class="javax.swing.JMenuItem" name="jmiDodajTipUcinka">
