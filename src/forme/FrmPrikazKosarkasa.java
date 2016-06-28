@@ -371,7 +371,7 @@ public class FrmPrikazKosarkasa extends javax.swing.JDialog {
         List<Kosarkas> listaPoPrezimenu = new ArrayList<>();
         for (Kosarkas k : sviKosarkasi) {
             if (prezime != null && !prezime.isEmpty()) {
-                if (k.getPrezime().equals(prezime)) {
+                if (k.getPrezime().toUpperCase().equals(prezime.toUpperCase()) || k.getPrezime().toUpperCase().contains(prezime.toUpperCase())) {
                     listaPoPrezimenu.add(k);
                 }
             } else {

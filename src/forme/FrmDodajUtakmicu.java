@@ -215,18 +215,15 @@ public class FrmDodajUtakmicu extends javax.swing.JDialog {
         for (Tim tim : timovi) {
             jcomboDomacin.addItem(tim);
         }
-
-        jcomboGost.removeAllItems();
-        for (Tim tim : timovi) {
-            jcomboGost.addItem(tim);
-        }
+        Tim t = (Tim) jcomboDomacin.getSelectedItem();
+        napuniComboGost(t);
 
         jcomboDomacin.addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
                 Tim t = (Tim) jcomboDomacin.getSelectedItem();
-                jcomboGost.removeItem(t);
+                napuniComboGost(t);
             }
         });
     }
@@ -293,5 +290,16 @@ public class FrmDodajUtakmicu extends javax.swing.JDialog {
     private void pozicionirajFormu() {
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
         this.setLocation(dim.width / 2 - this.getSize().width / 2, dim.height / 2 - this.getSize().height / 2);
+    }
+
+    private void napuniComboGost(Tim t) {
+        List<Tim> timovi = Kontroler.getInstance().vratiListuTimova();
+        jcomboGost.removeAllItems();
+        for (Tim tim : timovi) {
+
+            jcomboGost.addItem(tim);
+        }
+        jcomboGost.removeItem(t);
+
     }
 }

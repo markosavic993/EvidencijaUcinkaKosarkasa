@@ -140,7 +140,7 @@ public class FrmPocetna extends javax.swing.JFrame {
         });
         jPopupMenu1.add(jmiDodajTim);
 
-        jmitemDodajUtakmicu.setText(" Dodaj utakmicu");
+        jmitemDodajUtakmicu.setText("Dodaj utakmicu");
         jmitemDodajUtakmicu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jmitemDodajUtakmicuActionPerformed(evt);
@@ -164,7 +164,7 @@ public class FrmPocetna extends javax.swing.JFrame {
         });
         jPopupMenu1.add(jmitemPronadjiKosarkasa);
 
-        jmitemPronadjiTim.setText(" Pronađi tim");
+        jmitemPronadjiTim.setText("Pronađi tim");
         jmitemPronadjiTim.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jmitemPronadjiTimActionPerformed(evt);
