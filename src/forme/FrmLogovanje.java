@@ -25,6 +25,7 @@ public class FrmLogovanje extends javax.swing.JFrame {
         initComponents();
         pozicionirajFormu();
         postaviIkonicu();
+        jtxtUsername.requestFocusInWindow();
     }
 
     /**
@@ -51,6 +52,13 @@ public class FrmLogovanje extends javax.swing.JFrame {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setForeground(new java.awt.Color(0, 153, 255));
         setResizable(false);
+        addWindowFocusListener(new java.awt.event.WindowFocusListener() {
+            public void windowGainedFocus(java.awt.event.WindowEvent evt) {
+                formWindowGainedFocus(evt);
+            }
+            public void windowLostFocus(java.awt.event.WindowEvent evt) {
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -145,6 +153,10 @@ public class FrmLogovanje extends javax.swing.JFrame {
         FrmPovratiLozinku forma = new FrmPovratiLozinku(this, true);
         forma.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void formWindowGainedFocus(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowGainedFocus
+        jtxtUsername.requestFocusInWindow();
+    }//GEN-LAST:event_formWindowGainedFocus
 
     /**
      * @param args the command line arguments
